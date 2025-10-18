@@ -1,7 +1,7 @@
-// theme.ts
 import { createTheme } from '@mantine/core';
+import { components } from './mantine-components';
 
-const theme = createTheme({
+export const theme = createTheme({
   fontFamily: 'Plus Jakarta Sans, sans-serif',
 
   headings: {
@@ -28,6 +28,14 @@ const theme = createTheme({
     md: '19px',
     lg: '23px',
     xl: '30px',
+  },
+
+  radius: {
+    xl: '24px',
+    lg: '20px',
+    md: '8px',
+    sm: '4px',
+    xs: '2px',
   },
 
   colors: {
@@ -60,6 +68,6 @@ const theme = createTheme({
   primaryColor: 'primary',
 
   defaultRadius: 'md',
-});
 
-export default theme;
+  components,
+});
