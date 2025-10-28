@@ -39,33 +39,70 @@ export const theme = createTheme({
   },
 
   colors: {
+    // Primary purple shades
     primary: [
-      '#E4EBFA', // 0
-      '#F4F7FD', // 1
-      '#A8A4FF', // 2
-      '#635FC7', // 3
-      '#828FA3', // 4
-      '#3E3F4E', // 5
-      '#20212C', // 6
-      '#2B2C37', // 7
-      '#000112', // 8
-      '#FFFFFF', // 9
+      '#E4EBFA', // 0 - lightest purple tint
+      '#A8A4FF', // 1 - light purple
+      '#635FC7', // 2 - main primary purple
+      '#635FC7', // 3 - main primary purple (duplicate for variations)
+      '#635FC7', // 4 - main primary purple (duplicate for variations)
+      '#635FC7', // 5 - main primary purple (duplicate for variations)
+      '#635FC7', // 6 - main primary purple (duplicate for variations)
+      '#635FC7', // 7 - main primary purple (duplicate for variations)
+      '#635FC7', // 8 - main primary purple (duplicate for variations)
+      '#635FC7', // 9 - main primary purple (duplicate for variations)
     ],
+
+    // Neutral/Dark shades
+    dark: [
+      '#FFFFFF', // 0 - white
+      '#F4F7FD', // 1 - very light gray/background
+      '#E4EBFA', // 2 - light gray
+      '#828FA3', // 3 - medium gray (text secondary)
+      '#3E3F4E', // 4 - dark gray
+      '#2B2C37', // 5 - darker background
+      '#20212C', // 6 - darkest background
+      '#000112', // 7 - almost black
+      '#000112', // 8 - almost black
+      '#000112', // 9 - almost black
+    ],
+
+    // Red/Error shades
     red: [
-      '#FFF5F5', // 0 - very light tint
-      '#FFE0E0', // 1
-      '#FFCCCC', // 2 - soft tint
-      '#FFB3B3', // 3
-      '#FF8989', // 4 - design soft red
-      '#FF6B6B', // 5
-      '#EA5555', // 6 - design main red
-      '#CC4444', // 7
-      '#B23333', // 8
-      '#991F1F', // 9 - darkest
+      '#FF9898', // 0 - light red tint
+      '#FF9898', // 1 - light red tint
+      '#FF9898', // 2 - light red tint
+      '#FF9898', // 3 - light red tint
+      '#FF9898', // 4 - soft red
+      '#EA5555', // 5 - main red
+      '#EA5555', // 6 - main red (design primary)
+      '#EA5555', // 7 - main red
+      '#EA5555', // 8 - main red
+      '#EA5555', // 9 - main red
     ],
   },
 
   primaryColor: 'primary',
+
+  // Override default colors
+  white: '#FFFFFF',
+  black: '#000112',
+
+  other: {
+    // Additional design system colors for reference
+    mainPurple: '#635FC7',
+    mainPurpleLight: '#A8A4FF',
+    black: '#000112',
+    veryDarkGrey: '#20212C',
+    darkGrey: '#2B2C37',
+    linesLight: '#E4EBFA',
+    mediumGrey: '#828FA3',
+    linesDark: '#3E3F4E',
+    lightGreyBg: '#F4F7FD',
+    white: '#FFFFFF',
+    red: '#EA5555',
+    redLight: '#FF9898',
+  },
 
   defaultRadius: 'md',
 

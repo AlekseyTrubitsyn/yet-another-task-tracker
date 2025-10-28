@@ -30,28 +30,30 @@ export const components = {
 
       const variantStyles = {
         primary: {
-          backgroundColor: theme.colors.primary[3],
+          backgroundColor: theme.colors.primary[2], // #635FC7 - main purple
           color: theme.white,
           '&:hover': {
-            backgroundColor: theme.colors.primary[2],
+            backgroundColor: theme.colors.primary[1], // #A8A4FF - light purple
           },
         },
 
         secondary: {
-          backgroundColor: isDark ? theme.colors.primary[9] : alpha(theme.colors.primary[3], 0.1),
-          color: theme.colors.primary[3],
+          backgroundColor: isDark
+            ? alpha(theme.colors.primary[2], 0.15)
+            : alpha(theme.colors.primary[2], 0.1),
+          color: theme.colors.primary[2], // #635FC7 - main purple
           '&:hover': {
             backgroundColor: isDark
-              ? alpha(theme.colors.primary[9], 0.9)
-              : alpha(theme.colors.primary[3], 0.25),
+              ? alpha(theme.colors.primary[2], 0.25)
+              : alpha(theme.colors.primary[2], 0.25),
           },
         },
 
         destructive: {
-          backgroundColor: theme.colors.red[6],
+          backgroundColor: theme.colors.red[6], // #EA5555 - main red
           color: theme.white,
           '&:hover': {
-            backgroundColor: theme.colors.red[4],
+            backgroundColor: theme.colors.red[0], // #FF9898 - light red
           },
         },
       };
