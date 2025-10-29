@@ -69,6 +69,12 @@ src/
 │       └── index.ts  # Public API
 │
 ├── widgets/          # Large independent UI blocks
+│   ├── layout/       # App layout (AppShell, Sidebar, Header)
+│   │   ├── ui/
+│   │   │   ├── AppLayout/   # Main AppShell wrapper
+│   │   │   ├── Sidebar/     # Navigation sidebar
+│   │   │   └── Header/      # Top header bar
+│   │   └── index.ts
 │   └── welcome/
 │       ├── ui/       # Widget UI components
 │       └── index.ts  # Public API
